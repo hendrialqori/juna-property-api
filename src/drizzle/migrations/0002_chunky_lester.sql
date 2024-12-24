@@ -1,0 +1,1 @@
+ALTER TABLE `properties` RENAME COLUMN `tumbnail_url` TO `thumbnail_url`;

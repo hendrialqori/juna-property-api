@@ -1,0 +1,27 @@
+{
+  "version": "7",
+  "dialect": "mysql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "5",
+      "when": 1735019606332,
+      "tag": "0000_orange_iron_lad",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "5",
+      "when": 1735022114271,
+      "tag": "0001_famous_moonstone",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "5",
+      "when": 1735027103134,
+      "tag": "0002_chunky_lester",
+      "breakpoints": true
+    }
+  ]
+}
