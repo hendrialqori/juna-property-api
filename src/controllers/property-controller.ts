@@ -17,12 +17,40 @@ export default class PropertyController {
         }
     }
 
+    static async get(req: Request, res: Response, next: NextFunction) {
+        try {
+            const result = await PropertyService.get(req, res)
+            return mockSuccessResponse(res, {
+                status: StatusCode.OK,
+                data: result,
+                message: "Success"
+            })
+
+        } catch (error) {
+            next(error)
+        }
+    }
+
     static async add(req: Request, res: Response, next: NextFunction) {
         try {
             const result = await PropertyService.add(req, res)
             return mockSuccessResponse(res, {
                 status: StatusCode.OK,
                 data: result,
+                message: "Success"
+            })
+
+        } catch (error) {
+            next(error)
+        }
+    }
+
+    static async update(req: Request, res: Response, next: NextFunction) {
+        try {
+            await PropertyService.update(req, res)
+            return mockSuccessResponse(res, {
+                status: StatusCode.OK,
+                data: null,
                 message: "Success"
             })
 

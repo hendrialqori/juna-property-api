@@ -23,6 +23,7 @@ export const properties = mysqlTable(PROPERTIES, {
     price: int("price").notNull(),
     thumbnail_url: text("thumbnail_url").notNull(),
     view_url: text("view_url").notNull(),
+    address: text("address").notNull(),
     description: text("description").notNull(),
     created_at: timestamp("created_at").defaultNow(),
     updated_at: timestamp("updated_at").defaultNow()
